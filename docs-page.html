@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vision RX Documentation</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Vision RX Documentation" />
+    <meta name="author" content="Vision RX Documentation" />
+    <link
+      rel="icon"
+      href="https://www.visionrxlab.com/media/favicon/default/vrx-fav.jpg"
+      type="image/x-icon"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/simplelightbox/simple-lightbox.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+  </head>
+
+  <body class="docs-page">
+    <header class="header fixed-top">
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  class="logo-icon me-2"
+                  src="assets/images/logo.png"
+                  alt="logo" /><span class="logo-text"
+                  ><span class="text-alt"></span></span
+              ></a>
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+          <div
+            class="docs-top-utilities d-flex justify-content-end align-items-center"
+          >
+            <div class="top-search-box d-none d-lg-flex">
+              <form class="search-form">
+                <input
+                  type="text"
+                  placeholder="Search the docs..."
+                  name="search"
+                  id="search"
+                  class="form-control search-input"
+                />
+                <button type="submit" class="btn search-btn" value="Search">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <!--//docs-top-utilities-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
+
+    <div class="docs-wrapper">
+      <div id="docs-sidebar" class="docs-sidebar">
+        <div class="top-search-box d-lg-none p-3">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search the docs..."
+              name="search"
+              class="form-control search-input"
+            />
+            <button type="submit" class="btn search-btn" value="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-1"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >Customer Integration</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-1">Procedure</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-2"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-arrow-down"></i></span
+                >Customer Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-1">Purpose & Scope</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-2">Procedure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-3">Check Points</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-4">Traceability</a>
+            </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-3"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-box"></i></span
+                >Inventory</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-1">Purpose & Scope</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-2">Order Issue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-3"
+                >Order Issue Using OPC</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-4"
+                >FSV Store Order Process</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-5"
+                >Raw Materials Replace</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-6"
+                >Production Loss Booking</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-7"
+                >Force Base Calculation</a
+              >
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-4"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-plane"></i></span
+                >Dispatch</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-4-1">Procedure</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-5"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-book"></i></span
+                >Accounts</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-5-1">Procedure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-5-2">Sales Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-5-3">Number Sequence Update</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scrollto" href="#item-5-4">Invoice</a>
+                </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-6"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-laptop-code"></i></span
+                >Lab</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-7"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-tablet-alt"></i></span
+                >Mobile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-8"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-book-reader"></i></span
+                >Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-9"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-lightbulb"></i></span
+                >FAQs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a>
+            </li>
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article" id="section-1">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                Customer Integration
+                <!--<span class="docs-time">Last updated:
+								22-11-2022</span> -->
+              </h1>
+              <section class="docs-intro">
+                <p>
+                  Customer integration is the process of adding a new customer
+                  to our system. this process is done so that new customers can
+                  place their orders using our system.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-1-1">
+              <h2 class="section-heading">Procedure</h2>
+              <h5>
+                Here is the step by step procedure of Customer Integration into
+                our system.
+              </h5>
+              <ol>
+                <li>
+                  Customers who want to order lenses approach our sales team.
+                </li>
+                <li>We sell our products in 3 different categories</li>
+                <ul>
+                  <li>Nova</li>
+                  <li>VRX</li>
+                  <li>Private Label (Customer's own branding)</li>
+                </ul>
+                <li>
+                  We send the list of our products and prices to the customer,
+                  the price of the product depends on the type of the product
+                  and with which branding he wants to buy the product.
+                </li>
+                <li>
+                  If the customer likes the products and their price then we
+                  start the customer integration process.
+                </li>
+                <li>
+                  Firstly, customers is asked to send their details to us, so we
+                  can start the customer integration process.
+                </li>
+                <li>
+                  After getting the customer details all the customer
+                  information is sent to the
+                  <strong>Accounts Department</strong>, the accounts team
+                  generates a unique customer code for the customer after
+                  verifying all the details.
+                </li>
+                <li>
+                  If the products ordered by the customer already exist in our
+                  system, then the <strong>Product Integration </strong>team
+                  will prepare a master excel of all the products ordered by the
+                  customer.
+                </li>
+                <ul>
+                  <li>
+                    This master excel contains all the details related to the
+                    products ordered by the customers.
+                  </li>
+                </ul>
+                <li>
+                  If the product ordered by the customer is new and not exist in
+                  our system then the <strong>Product Integration</strong> team
+                  along with the <strong>Sales Team</strong>
+                  starts the designing and development of the new product,
+                  product integration team create the catalogue of the product
+                  and generates the new product code.
+                </li>
+                <li>
+                  The master excel created by the production integration team is
+                  sent to the pricing department to add pricing of the products,
+                  and also create the price in ERP.
+                </li>
+                <li>
+                  The pricing department sets the pricing of the products
+                  according to the customers and products.
+                </li>
+                <li>
+                  After this product order details are sent to 2 departments
+                </li>
+                <ul>
+                  <li><strong>Production Department</strong></li>
+                  <li><strong>IT Department</strong></li>
+                </ul>
+                <li>
+                  Production department enters product details into the Lensware
+                  software, Lensware software checks all the details and if
+                  everything is correct only then production of lens can be
+                  started
+                </li>
+                <li>IT team adds the product details to the ERP system</li>
+                <li>
+                  At last the customer is asked to place a sample order to start
+                  the testing process.
+                </li>
+                <li>
+                  After the testing process is over, the customer can normally
+                  place orders using our system.
+                </li>
+              </ol>
+            </section>
+            <!--//section-->
+          </article>
+
+          <article class="docs-article" id="section-2">
+            <header class="docs-header">
+              <h1 class="docs-heading">Customer Service</h1>
+              <section class="docs-intro">
+                <p>
+                  Customer service is the support we offer to our customers —
+                  both before and after they buy and use our products — that
+                  helps them have an easy, enjoyable experience with our brand.
+                  But customer service is more than solving a customer’s
+                  problems and closing tickets. customer service means
+                  delivering proactive and immediate support to customers
+                  anytime on the channel of their choice — phone, email, text,
+                  chat, and more.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-2-1">
+              <h2 class="section-heading">Purpose</h2>
+
+              <p>
+                To ensure the needs and expectations of customers are met by the
+                organization and to ensure complete customer satisfaction.
+              </p>
+              <h3 class="section-heading">Scope</h3>
+              <p>
+                Provide the customers with the best of service in terms of
+                production and logistics.
+              </p>
+
+              <ul>
+                <li>Process orders and request</li>
+                <li>
+                  Deal directly with customers either by phone, email, skype or
+                  WhatsApp
+                </li>
+                <li>Respond promptly to customer’s inquiries</li>
+                <li>Handle and resolve customer complaints</li>
+                <li>
+                  Obtain and evaluate all relevant information to handle
+                  inquiries and complaints
+                </li>
+                <li>
+                  Direct requests and unresolved issues to the designated
+                  resource / department /person
+                </li>
+                <li>
+                  Follow up internally on urgent orders, request, and complaints
+                </li>
+                <li>Prepare Service reports and other MIS reports</li>
+                <li>Providing complete dispatch details to customers</li>
+                <li>Maintain account statements of customers.</li>
+                <li>
+                  Working with IT team to automate and streamline work to
+                  achieve fast and error free processing.
+                </li>
+
+                <!--<li>We take orders from customers in different ways, some customers send us orders
+									through excel sheets in email</li>
+								<li>Customer sends all the information related to the ordered product in an excel sheet.
+								</li> 
+								<li>Customer service department prepares a master excel by taking the information from
+									the excel file</li>
+								<li>After creation of master excel it is uploaded in ERP for further processing of
+									orders</li> -->
+              </ul>
+
+              <!-- <h4>Collecting missing data, if any, from the Customer</h4>
+							<ul>
+								<li>When a customer places an order, Sometimes they miss to add some important values in
+									the ordered product, Customer service department corrects this missing data by
+									taking the missing data from the customer and sends the order for further processing
+								</li>
+							
+
+							<li>Suggesting modifications as per the Production Possibilities</li>
+							<ul>
+								<li>Sometimes the customer demands such things in the product order, according to which
+									it is not possible to make the product, in this condition, the customer service
+									department connects with the customer and does the modification according to which
+									it is possible to make the product.</li>
+							</ul>
+						-->
+
+              <!--
+							<ul>
+								
+								<li>The customer service department takes the order from the customer, after
+									verification and modification, places it in the ordering system.</li>
+							</ul>
+
+							<li>Taking measures in case of complaints from the Customers</li>
+							<ul>
+								<li>Customer service always takes appropriate steps for any customer problem so that the
+									customer's problem can be solved properly.</li>
+								<li>Whenever the customer has any problem, he contacts the customer service department.
+								</li>
+								<li>Whenever the customer has any problem, he contacts the customer service department.
+								</li>
+								<li>After getting the solution of the problem from the internal departments, the
+									customer service contacts the customer and provide the solution.</li>
+							</ul>
+						-->
+            </section>
+
+            <section class="docs-section" id="item-2-2">
+              <h2 class="section-heading">Procedure</h2>
+
+              <ul>
+                <li>
+                  The orders received in excel form are processed using standard
+                  XL format.
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row col-12 col-md-12 row mb-3">
+                <a href="assets/images/excel_img.png" target="_blank"
+                  ><img
+                    class="figure-img img-fluid shadow rounded"
+                    src="assets/images/excel_img.png"
+                    alt=""
+                /></a>
+              </div>
+              <ul>
+                <li>
+                  The online orders are received in Microsoft Dynamics Axapta in
+                  under dedicated Customer Account number (EX/0000310) and are
+                  printed in lots through batch printing facility.
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/axapta_1.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/axapta_1.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/axapta_2.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/axapta_2.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  Once all the jobs are printed and checked/validated, the
+                  correct jobs are sent out for next process. The one with
+                  incorrect values / error jobs are mailed back to customer for
+                  confirmation.
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/oci_1.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/oci_1.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  After production completion, the ready lenses are dispatched
+                  to customer as per the schedule fixed. Invoices are shared
+                  with our courier partners and commercial team to prepare the
+                  dispatch documents.
+                </li>
+              </ul>
+
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/shipping_invoice.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/shipping_invoice.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  After dispatch, the quantity dispatched and value is shared
+                  with Accounts team, Invoices are generated in system.
+                </li>
+                <li>
+                  Once this is done, a system generated packing slip is
+                  generated which is shared with customer with other details
+                  like Invoice, AWB number in dispatch details. Account
+                  statement is also prepared by Customer Service Team
+                </li>
+              </ul>
+            </section>
+
+            <section class="docs-section" id="item-2-3">
+              <h2 class="section-heading">Check Points</h2>
+              <ul>
+                <li>
+                  While processing orders through Excel sheet, the generated
+                  orders are thoroughly cross checked before releasing for
+                  production.
+                </li>
+                <li>
+                  We also maintain a register to track down manually which
+                  orders are processed and released, jobs which are
+                  non-validated.
+                </li>
+                <li>
+                  f any jobs are not entered in the server, customers get online
+                  acknowledgement, so that they can rectify and re place the
+                  orders. All online orders are also checked by CS for any
+                  errors.
+                </li>
+                <li>
+                  Urgent orders / Re-order jobs are handed over separately to
+                  internal tracking team PPC for fast tracked and early
+                  dispatch.
+                </li>
+                <li>
+                  All Re-order and pending list is mailed to all concerned team
+                  internally for their follow ups and so that measurement can be
+                  taken.
+                </li>
+              </ul>
+
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/list_1.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/list_1.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="col-12 col-md-8 row mb-3">
+                  <a href="assets/images/list_2.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/list_2.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  We make sure any recurring issue is escalated to higher
+                  authority for their knowledge and proper action. Re orders and
+                  complaints are forwarded at
+                  <a href="mailto:labsupport@vrxlab.com" target="_blank"
+                    >labsupport@vrxlab.com</a
+                  >, where a dedicated team works on it to provide solution and
+                  close the complaint.
+                </li>
+
+                <li>
+                  Important Information is provided to different shift person
+                  through e-mail /phone /WhatsApp group.
+                </li>
+                <li>All sample jobs are processed carefully</li>
+                <li>All orders of a new customer is checked by seniors</li>
+                <li>
+                  New product launched are checked thoroughly by seniors ,
+                  before releasing to prod it is cross checked by LMS team also
+                  to see if all technical info is coming correctly.
+                </li>
+              </ul>
+            </section>
+
+            <section class="docs-section" id="item-2-4">
+              <h2 class="section-heading">Traceability</h2>
+              <p>
+                Each Customer needs to have unique Customer Account No created
+                in ERP like EX/0000310 (Bolle Protection) to place the order and
+                for easy tracking .When an ECP places an order with Reference
+                Number of his own, against each reference number of the order
+                from the Customer, a unique OCI No like EXP/917740/15 is created
+                in the ERP system. To maintain uniqueness, the last two digits
+                change in ERP once we reach 9, 99,999.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/gkb_1.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/gkb_1.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Against OCI Number, a Barcode generates, which help the
+                  organization and end users to track and process the orders
+                  efficiently and then tracked for the status in Production.
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/oci_2.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/oci_2.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  We maintain / keep the data at different servers since the
+                  inception of ERP from 2003 onwards. The latest server contains
+                  data from 2018 onwards.
+                </li>
+                <li>
+                  In the job ticket (LMS sheet) we have production barcodes,
+                  which is scanned to change the status at different production
+                  level to trace the exact location of the order in prod. The
+                  Status log helps us to understand whether an order is still in
+                  process or dispatched / invoiced.
+                </li>
+              </ul>
+
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/scan_1.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/scan_1.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/orders_2.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/orders_2.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  In the job card we have production plan mentioned which
+                  indicates through which surfacing stage the order has to move.
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/orders_3.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/orders_3.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  Online customers can also track real time status of their
+                  orders. The updated file is uploaded automatically in “File
+                  Transfer Application “which customers can download and see the
+                  status & also track the real status of their excel orders via
+                  below web link.
+                </li>
+              </ul>
+
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/filetransfer_1.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/filetransfer_1.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <h4>Flow Chart</h4>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/flowchart_1.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/flowchart_1.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+          </article>
+
+          <!--//docs-article-->
+          <article class="docs-article" id="section-3">
+            <header class="docs-header">
+              <h1 class="docs-heading">Inventory</h1>
+              <section class="docs-intro">
+                <p>
+                  Inventory refers to the products that are ready to sell, along
+                  with the raw materials that are used to produce them. There
+                  are three general categories of inventory, including raw
+                  materials (any supplies that are used to produce finished
+                  products), work-in-progress (WIP), and finished products or
+                  those that are ready for sale.
+                </p>
+                <p>
+                  Inventory management allows businesses to minimize inventory
+                  costs as they create or receive products on an as-needed
+                  basis.
+                </p>
+                <p>Inventory is divided according to two types of lenses</p>
+                <ul>
+                  <li>Stock Lens (Finished Lens)</li>
+                  <li>RX Lens (Semi Finished Lens)</li>
+                </ul>
+
+                <h4>Stock Lens (Finished Lens)</h4>
+                <p>
+                  These lenses are pre-manufactured with a certain base curve,
+                  prescription and blank size. The lenses are then coated with
+                  anti-glare, anti-scratch or both(As per customer requirement),
+                  and packaged for retail.
+                </p>
+
+                <h4>RX Lens (Semi Finished Lens)</h4>
+                <p>
+                  Semi-finished lens is the raw blank lens used to produce the
+                  most individualized RX lens according to the customer’s
+                  requirement. Different prescription powers request for
+                  different semi-finished lens types or base curves, it goes
+                  through multiple processes (Surfacing, Coating, Tinting etc)
+                  Depending on requirement of particular order.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-3-1">
+              <h3 class="section-heading">Purpose</h3>
+              <p>
+                To ensure that adequate control is exercised for receipt,
+                handling, storage and preservation of product.
+              </p>
+              <h3 class="section-heading">Scope</h3>
+              <ul>
+                <li>
+                  The procedure covers all the materials required for uncut lens
+                  production.
+                </li>
+                <li>
+                  Semi Finish and Finish lens Store HOD is responsible for
+                  implementation of this procedure.
+                </li>
+              </ul>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-3-2">
+              <h3 class="section-heading">Order Issue</h3>
+              <ul>
+                <li>
+                  The online orders are received from CS Department (via PPC)
+                </li>
+                <li>Orders are received in Microsoft Dynamics Axapta</li>
+                <li>
+                  The appropriate product needs to be issued to the each order.
+                </li>
+                <li>
+                  In the first step to issue the order we have to find OCI using
+                  OCI number in dynamic Axapta
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/oci_find.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/oci_find.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  After finding the OCI we have to add the lens details inside
+                  the <strong> Raw Materials tab </strong>
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/raw_material.jpg" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/raw_material.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  After adding the lens details, next step is to issue the order
+                  from inventory
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/issue_inventory.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/issue_inventory.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>In the final step the order is issued to the lab</li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/issuetolab.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/issuetolab.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </section>
+
+            <section class="docs-section" id="item-3-3">
+              <h3 class="section-heading">Order Issue Using OPC</h3>
+              <li>
+                In Dynamic Axapta inside the Automation Menu, select the
+                Domestic Stock Issue or Export Stock Issue Depending upon the
+                type of order
+              </li>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a
+                    href="assets/images/bulk_order_processing.png"
+                    target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/bulk_order_processing.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>Scan the OCI</li>
+                <li>
+                  In this process we dont have to type the Left Eye and Right
+                  Eye lens value manually we directly can scan the OPC code of
+                  respective lens
+                </li>
+                <li>Scan the OPC code of Right Eye lens</li>
+                <li>Scan the OPC code of Left Eye lens</li>
+                <li>
+                  After scanning OPC codes of both Eyes the order is now issued
+                </li>
+              </ul>
+            </section>
+
+            <section class="docs-section" id="item-3-4">
+              <h3 class="section-heading">FSV Store Order Processing</h3>
+              <p>We use this procees to issue the stock orderes in the bulk</p>
+              <ul>
+                <li>Get orders via Email from CS Department</li>
+                <li>We have created master excel format for taking orders</li>
+                <li>
+                  Convert the customer order format to company’s standard format
+                </li>
+                <li>
+                  Print out of mail body of the order along with the order sheet
+                  is handed over to the picking person
+                </li>
+                <li>Picking person goes to inventory to pick the lenses.</li>
+                <li>
+                  Average picking time: One person takes 4 hours to pick 1000
+                  pcs
+                </li>
+                <li>
+                  Once the FSV lenses are picked, they are bifurcated as per
+                  customer requirement
+                </li>
+                <li>
+                  If the lens requires Coating (HC/HMC) and Tinting as per the
+                  requirement, the lens is sent to the coating and tinting labs
+                  for processing, and after completing these processes lenses
+                  are sent for packing
+                </li>
+                <li>
+                  According to the requirement if the lens does not require
+                  coating and tinting, then the lens is sent for packing
+                </li>
+              </ul>
+              <h5>
+                There are two types of techniques used for packing, according to
+                the customer's requirement;
+              </h5>
+
+              <ul>
+                <li>Automatic Packing using Autopacker Machine</li>
+                <li>Manual Packing</li>
+              </ul>
+              <h4>Automatic Packing</h4>
+              <ul>
+                <li>
+                  Average Packing time: One person takes 3 hours to pack 1000
+                  pcs using Autopacker machine, Depending on number of types of
+                  lenses contained in a consignment (Colour and Coating) this
+                  process takes more or less time (since manual intervention is
+                  required while inputting type)
+                </li>
+                <li>
+                  In addition, certain customer require different envelopes for
+                  different types, so that change also needs to be made
+                  manually.
+                </li>
+              </ul>
+              <h4>Manual Packing</h4>
+              <ul>
+                <li>
+                  Average Packing Time: One Person takes 6 hours to pack 1000
+                  pcs
+                </li>
+                <li>
+                  Certain customers (lower %) demand manual packing of lenses
+                  and this process take double the time of automatic packing.
+                </li>
+              </ul>
+
+              <h4>Scanning (By Barcode Scanner)</h4>
+              <ul>
+                <li>
+                  Average Scanning time: one person takes 1 hour to scan 1000
+                  pcs
+                </li>
+                <li>
+                  This is the maximum efficiency i.e. where the barcodes are
+                  just on the top of the envelope and so the entire envelope
+                  does not need to be lifter for scanning.
+                </li>
+              </ul>
+
+              <h4>In Box Arrangement</h4>
+              <ul>
+                <li>
+                  This process is used to arrange the packed lens boxes and it
+                  requires an average of 15-20 minutes
+                </li>
+              </ul>
+            </section>
+
+            <section class="docs-section" id="item-3-5">
+              <h3 class="section-heading">Raw Material Replace</h3>
+              <p>
+                If there is a need to change the Raw material in any particular
+                order, we have to follow these steps..
+              </p>
+              <ul>
+                <li>We have to find the order in Axapta by Scanning the OCI</li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/raw_mat_replace.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/raw_mat_replace.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Now we have to select the eye for which the lens needs to be
+                  replaced
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/select_eye.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/select_eye.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>Now we have to click on the Populate button</li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/populate_1st_time.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/populate_1st_time.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  After clicking the Populate button we have to add the values
+                  in Right Eye Raw Materials and Left Eye Raw materials fields
+                </li>
+                <li>
+                  Now we have to click on the Exchange Raw Material ButtonGroup
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/after_populate.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/after_populate.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  Now the status of order is changed to "Issued by Inventory"
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a
+                    href="assets/images/after_populate_change.png"
+                    target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/after_populate_change.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  Again Status is changed to Send to Lab and Return to Lab
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/status_change.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/status_change.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </section>
+
+            <!--//section-->
+
+            <section class="docs-section" id="item-3-6">
+              <h3 class="section-heading">Production Loss Booking</h3>
+              <p>
+                Product Loss means any loss of Product occurring as a damage to
+                Product caused by the failure of the handling, testing or
+                storage of Product.
+              </p>
+              <p>
+                Production loss also occurs when the product is not made
+                according to the given requirements. when the product loss
+                happen we have to replace the product with a new product.
+              </p>
+              <ul>
+                <li>
+                  To issue a new product, we have to scan the OCI to find the
+                  particular order in which the material needs to be reissued
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/production_loss.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/production_loss.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  Now we have to Select Department and select the option from a
+                  drop-down menu to provide the reason for the loss of product
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/select_dept.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/select_dept.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>Now put the material details to issue a new product</li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/put_materials.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/put_materials.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  Now we have to click on the Create Journal button to create a
+                  new Journal Number
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/create_journal.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/create_journal.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  After creating Journal number we have to click on the Labs
+                  button and select the option - Return to Lab, after selecting
+                  the option a dropdown menu will open, from this dropdown menu
+                  we have to choose the specific lab
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/oci_return.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/oci_return.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>Optware Calculation Sheet (For Rodenstock orders)</li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/optware_calc.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/optware_calc.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </section>
+
+            <!--//section-->
+
+            <section class="docs-section" id="item-3-7">
+              <h3 class="section-heading">Force Base Calculation</h3>
+              <p>
+                For some orders when the inventory of any SKU (Supplier) is out
+                of stock, we can use the same SKU of alternative supplier by
+                using force base calculation.
+              </p>
+              <ul>
+                <li>Scan OCI</li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a
+                    href="assets/images/force_base_calculation.png"
+                    target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/force_base_calculation.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>Scan OPC Code for both Right Eye and Left Eye</li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/scan_re_le.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/scan_re_le.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <ul>
+                <li>Send Job To Lensware</li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/send_job_lensware.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/send_job_lensware.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>Updated lensware is printed on designated printer.</li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="docs-article" id="section-4">
+            <header class="docs-header">
+              <h1 class="docs-heading">Dispatch</h1>
+              <section class="docs-intro">
+                <p>
+                  Dispatching is a process of managing the movement of product
+                  to meet production plans or customer demand. Dispatch team
+                  ensure that the correct products are delivered to the correct
+                  location at the correct time. It forms the foundation of the
+                  overall delivery operation.
+                </p>
+              </section>
+
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-4-1">
+              <h2 class="section-heading">Procedure</h2>
+              <p></p>
+              <ul>
+                <li>Dispatch team receives the packed lens from final QC</li>
+                <li>
+                  Dispatch team shortlists the packed lens according to customer
+                  with required customer information, status of order is changed
+                  to “Delivered to customer”.
+                </li>
+                <li>
+                  Sends the customer wise delivery report to CS team which
+                  contains total quantity and value of product to be dispatched
+                </li>
+                <li>
+                  The CS team prepares customs invoice, and sends these details
+                  to the logistic department, courier partners and commercial
+                  department
+                </li>
+                <li>
+                  Customized packaging is done according to different Customers
+                </li>
+                <li>
+                  Logistic department receives Customs invoice from CS Team
+                </li>
+                <li>
+                  Create Label / Airway bill with different logistic service
+                  providers with booking of shipments
+                </li>
+                <li>
+                  Send the AWB and pickup request to Logistics provider,
+                  Customer service department and commercial department
+                </li>
+                <li>
+                  Arrange and check parcels and documents as per check list
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/dispatch_checklist.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/dispatch_checklist.png"
+                      alt=""
+                  /></a>
+                </div>
+                <ul>
+                  <li>Vehicle movement (UPS/DHL/Fedex/Aramex/Air Freight)</li>
+                  <li>
+                    Handover to Forwarding Agent – To do customs
+                    clearance/Flight connectivity
+                  </li>
+                  <li>
+                    Shipment Follow up with Forwarders and courier partners till
+                    the delivery to customer.
+                  </li>
+                </ul>
+                <h4>Process Flow</h4>
+                <div class="simplelightbox-gallery row mb-3">
+                  <div class="col-12 col-md-12 row mb-3">
+                    <a href="assets/images/logistics_flow.png" target="_blank"
+                      ><img
+                        class="figure-img img-fluid shadow rounded"
+                        src="assets/images/logistics_flow.png"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-5">
+            <header class="docs-header">
+              <h1 class="docs-heading">Accounts</h1>
+              <section class="docs-intro">
+                <p>
+                  The accounting department refers to the division that looks
+                  after the preparation of financial statements, maintenance of
+                  general ledger, payment of bills, preparation of customer
+                  bills, payroll, and more. In other words, they are responsible
+                  for managing the overall economic front of the business.
+                </p>
+              </section>
+            </header>
+            <section class="docs-section" id="item-5-1">
+              <h2 class="section-heading">Procedure</h2>
+              <p>
+                Accounts department receives the orders details from CS
+                department through Email.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/email.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/email.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <p>
+                If the order contains freight and insurance details, we have to
+                create the sales order.
+              </p>
+              <p>
+                If the order does not contain freight and insurance details, we
+                do not have to create the sales order.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-5-2">
+              <h2 class="section-heading">Sales Order</h2>
+              <ul>
+                <li>Sales Orders are created in Microsoft Dynamics Axapta</li>
+                <li>
+                  In Dynamic AX, inside the Account Recievable select the "All
+                  Sales orders"
+                </li>
+                <li>
+                  To create new sales order press the Ctrl + N keys together
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/sales_order.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/sales_order.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>Now the new sales order creation window will open</li>
+                <li>There are 2 rows in the table, in the first row we add the freight charge in the "Unit Price" Column</li>
+                <li>In 2nd row, we add insurance Charge in the "Unit Price" Column
+                </li>
+                <li>After adding the values, we click on the "Packing slip" button, and the order status is now changed to delivered
+                </li>
+              </ul>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-5-3">
+              <h2 class="section-heading">Updating the Number Sequence</h2>
+              <p></p>
+              <ul>
+                <li>
+                  Number Sequence is to be updated in Microsoft Dynamics Axapta
+                  under the dedicated Customer Account number
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/number_sequence.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/number_sequence.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Add the "From Date" and "To Date" as per the delivery date of
+                  particular order
+                </li>
+                <li>Click on the "List Order" Button</li>
+                <li>After this click on "Update Order" Button</li>
+              </ul>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-5-4">
+              <h2 class="section-heading">Invoice</h2>
+              <p></p>
+              <ul>
+                <li>
+                  Invoice Details needs to be updated in Microsoft Dynamics
+                  Axapta under the dedicated Customer Account number
+                </li>
+              </ul>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 col-md-12 row mb-3">
+                  <a href="assets/images/invoice.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/invoice.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <ul>
+                <li>Order status is delivered</li>
+                <li>
+                  Add the "From Date" and "To Date" as per the delivery date of
+                  particular order
+                </li>
+                <li>Click on the "Ok" Button</li>
+                <li>
+                  Now in the OCI list screen, click on the Total button
+                </li>
+                <li>
+                  The total invoice amount should be equal to the amount given
+                  in the mail by CS department
+                </li>
+                <li>If both values are same, click on "Update Order" Button</li>
+                <li>Now Click on the "Batch" Button</li>
+                <li>Select Yes in Batch processing option, and click on "OK" button</li>
+              </ul>
+            </section>
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-6">
+            <header class="docs-header">
+              <h1 class="docs-heading">Web</h1>
+              <section class="docs-intro">
+                <p>
+                  Section intro goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Quisque finibus condimentum nisl
+                  id vulputate. Praesent aliquet varius eros interdum suscipit.
+                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
+                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
+                  Fusce in malesuada odio.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-6-1">
+              <h2 class="section-heading">Section Item 6.1</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-6-2">
+              <h2 class="section-heading">Section Item 6.2</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-6-3">
+              <h2 class="section-heading">Section Item 6.3</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-7">
+            <header class="docs-header">
+              <h1 class="docs-heading">Mobile</h1>
+              <section class="docs-intro">
+                <p>
+                  Section intro goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Quisque finibus condimentum nisl
+                  id vulputate. Praesent aliquet varius eros interdum suscipit.
+                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
+                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
+                  Fusce in malesuada odio.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-7-1">
+              <h2 class="section-heading">Section Item 7.1</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-7-2">
+              <h2 class="section-heading">Section Item 7.2</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-7-3">
+              <h2 class="section-heading">Section Item 7.3</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-8">
+            <header class="docs-header">
+              <h1 class="docs-heading">Resources</h1>
+              <section class="docs-intro">
+                <p>
+                  Section intro goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Quisque finibus condimentum nisl
+                  id vulputate. Praesent aliquet varius eros interdum suscipit.
+                  Donec eu purus sed nibh convallis bibendum quis vitae turpis.
+                  Duis vestibulum diam lorem, vitae dapibus nibh facilisis a.
+                  Fusce in malesuada odio.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-8-1">
+              <h2 class="section-heading">Section Item 8.1</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-8-2">
+              <h2 class="section-heading">Section Item 8.2</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-8-3">
+              <h2 class="section-heading">Section Item 8.3</h2>
+              <p>
+                Vivamus efficitur fringilla ullamcorper. Cras condimentum
+                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
+                nisi, at commodo augue convallis id. Sed interdum turpis quis
+                felis bibendum imperdiet. Mauris pellentesque urna eu leo
+                gravida iaculis. In fringilla odio in felis ultricies porttitor.
+                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
+                sit amet, commodo sollicitudin est. Vestibulum ultricies
+                malesuada tempor.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-9">
+            <header class="docs-header">
+              <h1 class="docs-heading">FAQs</h1>
+              <section class="docs-intro">
+                <p>
+                  Section intro goes here. You can list all your FAQs using the
+                  format below.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-9-1">
+              <h2 class="section-heading">
+                Section Item 9.1 <small>(FAQ Category One)</small>
+              </h2>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>What's sit amet quam
+                eget lacinia?
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                felis eu pede mollis pretium.
+              </p>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>How to ipsum dolor
+                sit amet quam tortor?
+              </h5>
+              <p>
+                Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+                sodales, augue velit cursus nunc, quis gravida magna mi a
+                libero. Fusce vulputate eleifend sapien. Vestibulum purus quam,
+                scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan
+                lorem in dui.
+              </p>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>Can I bibendum
+                sodales?
+              </h5>
+              <p>
+                Fusce vulputate eleifend sapien. Vestibulum purus quam,
+                scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan
+                lorem in dui.
+              </p>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>Where arcu sed urna
+                gravida?
+              </h5>
+              <p>
+                Aenean et sodales nisi, vel efficitur sapien. Quisque molestie
+                diam libero, et elementum diam mollis ac. In dignissim aliquam
+                est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+                Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec
+                arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu
+                viverra viverra, ultricies nec urna.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-9-2">
+              <h2 class="section-heading">
+                Section Item 9.2 <small>(FAQ Category Two)</small>
+              </h2>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>What's sit amet quam
+                eget lacinia?
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                felis eu pede mollis pretium.
+              </p>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>How to ipsum dolor
+                sit amet quam tortor?
+              </h5>
+              <p>
+                Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+                sodales, augue velit cursus nunc, quis gravida magna mi a
+                libero. Fusce vulputate eleifend sapien. Vestibulum purus quam,
+                scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan
+                lorem in dui.
+              </p>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>Can I bibendum
+                sodales?
+              </h5>
+              <p>
+                Fusce vulputate eleifend sapien. Vestibulum purus quam,
+                scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan
+                lorem in dui.
+              </p>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>Where arcu sed urna
+                gravida?
+              </h5>
+              <p>
+                Aenean et sodales nisi, vel efficitur sapien. Quisque molestie
+                diam libero, et elementum diam mollis ac. In dignissim aliquam
+                est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+                Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec
+                arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu
+                viverra viverra, ultricies nec urna.
+              </p>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-9-3">
+              <h2 class="section-heading">
+                Section Item 9.3 <small>(FAQ Category Three)</small>
+              </h2>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>How to dapibus
+                sollicitudin justo vel fermentum?
+              </h5>
+              <p>
+                Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+                sodales, augue velit cursus nunc, quis gravida magna mi a
+                libero. Fusce vulputate eleifend sapien. Vestibulum purus quam,
+                scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan
+                lorem in dui.
+              </p>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>How long bibendum
+                sodales?
+              </h5>
+              <p>
+                Fusce vulputate eleifend sapien. Vestibulum purus quam,
+                scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan
+                lorem in dui.
+              </p>
+              <h5 class="pt-3">
+                <i class="fas fa-question-circle me-1"></i>Where dapibus
+                sollicitudin?
+              </h5>
+              <p>
+                Aenean et sodales nisi, vel efficitur sapien. Quisque molestie
+                diam libero, et elementum diam mollis ac. In dignissim aliquam
+                est eget ullamcorper. Sed id sodales tortor, eu finibus leo.
+                Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec
+                arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu
+                viverra viverra, ultricies nec urna.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <footer class="footer">
+            <div class="container text-center py-3">
+              <small class="copyright">© Vision Rx Lab</small>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+  </body>
+</html>
