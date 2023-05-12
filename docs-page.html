@@ -66,22 +66,7 @@
           <!--//docs-logo-wrapper-->
           <div
             class="docs-top-utilities d-flex justify-content-end align-items-center"
-          >
-            <div class="top-search-box d-none d-lg-flex">
-              <form class="search-form">
-                <input
-                  type="text"
-                  placeholder="Search the docs..."
-                  name="search"
-                  id="search"
-                  class="form-control search-input"
-                />
-                <button type="submit" class="btn search-btn" value="Search">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </div>
-          </div>
+          ></div>
           <!--//docs-top-utilities-->
         </div>
         <!--//container-->
@@ -89,2425 +74,391 @@
       <!--//branding-->
     </header>
     <!--//header-->
-
-    <div class="docs-wrapper">
-      <div id="docs-sidebar" class="docs-sidebar">
-        <div class="top-search-box d-lg-none p-3">
-          <form class="search-form">
-            <input
-              type="text"
-              placeholder="Search the docs..."
-              name="search"
-              class="form-control search-input"
-            />
-            <button type="submit" class="btn search-btn" value="Search">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-        </div>
-        <nav id="docs-nav" class="docs-nav navbar">
-          <ul class="section-items list-unstyled nav flex-column pb-3">
-            <li class="nav-item section-title">
-              <a class="nav-link scrollto active" href="#section-1"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-map-signs"></i></span
-                >Customer Integration</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-1-1">Procedure</a>
-            </li>
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link scrollto" href="#section-2"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-arrow-down"></i></span
-                >Customer Service</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-2-1">Purpose & Scope</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-2-2">Procedure</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-2-3">Check Points</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-2-4">Traceability</a>
-            </li>
-
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link scrollto" href="#section-3"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-box"></i></span
-                >Inventory</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-3-1">Purpose & Scope</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-3-2">Order Issue</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-3-3"
-                >Order Issue Using OPC</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-3-4"
-                >FSV Store Order Process</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-3-5"
-                >Raw Materials Replace</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-3-6"
-                >Production Loss Booking</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-3-7"
-                >Force Base Calculation</a
-              >
-            </li>
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link scrollto" href="#section-4"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-plane"></i></span
-                >Dispatch</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-4-1">Procedure</a>
-            </li>
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link scrollto" href="#section-5"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-book"></i></span
-                >Accounts</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-5-1">Procedure</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-5-2">Sales Order</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-5-3"
-                >Number Sequence Update</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-5-4">Invoice</a>
-            </li>
-
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link scrollto" href="#section-6"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-laptop-code"></i></span
-                >Lens Production</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-1">Surfacing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-2">Calculation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-3"
-                >Unpacking and Checking</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-4">Taping</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-5">Blocking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-6">Generation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-7">Engraving</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-8">Smoothing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-9">Polishing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-6-10">D-Blocking</a>
-            </li>
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link scrollto" href="#section-7"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-tablet-alt"></i></span
-                >Quality Control</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-7-1">Pre QC</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-7-2">Final QC</a>
-            </li>
-
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link scrollto" href="#section-8"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-book-reader"></i></span
-                >Tint</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-8-1">Types of Tint</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-8-2"
-                >Master Tint Sample & Working Tint Sample</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-8-3">Procedure</a>
-            </li>
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link scrollto" href="#section-9"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-lightbulb"></i></span
-                >Coating</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-9-1">Hard Coating</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-9-2"
-                >Hard Multi Coating</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <!--//docs-nav-->
-      </div>
-      <!--//docs-sidebar-->
-      <div class="docs-content">
-        <div class="container">
-          <article class="docs-article" id="section-1">
-            <header class="docs-header">
-              <h1 class="docs-heading">
-                Customer Integration
-                <!--<span class="docs-time">Last updated:
-								22-11-2022</span> -->
-              </h1>
-              <section class="docs-intro">
-                <p>
-                  Customer integration is the process of adding a new customer
-                  to our system. this process is done so that new customers can
-                  place their orders using our system.
-                </p>
-              </section>
-              <!--//docs-intro-->
-            </header>
-            <section class="docs-section" id="item-1-1">
-              <h2 class="section-heading">Procedure</h2>
-              <h5>
-                Here is the step by step procedure of Customer Integration into
-                our system.
-              </h5>
-              <ol>
-                <li>
-                  Customers who want to order lenses approach our sales team.
-                </li>
-                <li>We sell our products in 3 different categories</li>
-                <ul>
-                  <li>Nova</li>
-                  <li>VRX</li>
-                  <li>Private Label (Customer's own branding)</li>
-                </ul>
-                <li>
-                  We send the list of our products and prices to the customer,
-                  the price of the product depends on the type of the product
-                  and with which branding he wants to buy the product.
-                </li>
-                <li>
-                  If the customer likes the products and their price then we
-                  start the customer integration process.
-                </li>
-                <li>
-                  Firstly, customers is asked to send their details to us, so we
-                  can start the customer integration process.
-                </li>
-                <li>
-                  After getting the customer details all the customer
-                  information is sent to the
-                  <strong>Accounts Department</strong>, the accounts team
-                  generates a unique customer code for the customer after
-                  verifying all the details.
-                </li>
-                <li>
-                  If the products ordered by the customer already exist in our
-                  system, then the <strong>Product Integration </strong>team
-                  will prepare a master excel of all the products ordered by the
-                  customer.
-                </li>
-                <ul>
-                  <li>
-                    This master excel contains all the details related to the
-                    products ordered by the customers.
-                  </li>
-                </ul>
-                <li>
-                  If the product ordered by the customer is new and not exist in
-                  our system then the <strong>Product Integration</strong> team
-                  along with the <strong>Sales Team</strong>
-                  starts the designing and development of the new product,
-                  product integration team create the catalogue of the product
-                  and generates the new product code.
-                </li>
-                <li>
-                  The master excel created by the production integration team is
-                  sent to the pricing department to add pricing of the products,
-                  and also create the price in ERP.
-                </li>
-                <li>
-                  The pricing department sets the pricing of the products
-                  according to the customers and products.
-                </li>
-                <li>
-                  After this product order details are sent to 2 departments
-                </li>
-                <ul>
-                  <li><strong>Production Department</strong></li>
-                  <li><strong>IT Department</strong></li>
-                </ul>
-                <li>
-                  Production department enters product details into the Lensware
-                  software, Lensware software checks all the details and if
-                  everything is correct only then production of lens can be
-                  started
-                </li>
-                <li>IT team adds the product details to the ERP system</li>
-                <li>
-                  At last the customer is asked to place a sample order to start
-                  the testing process.
-                </li>
-                <li>
-                  After the testing process is over, the customer can normally
-                  place orders using our system.
-                </li>
-              </ol>
-            </section>
-            <!--//section-->
-          </article>
-
-          <article class="docs-article" id="section-2">
-            <header class="docs-header">
-              <h1 class="docs-heading">Customer Service</h1>
-              <section class="docs-intro">
-                <p>
-                  Customer service is the support we offer to our customers —
-                  both before and after they buy and use our products — that
-                  helps them have an easy, enjoyable experience with our brand.
-                  But customer service is more than solving a customer’s
-                  problems and closing tickets. customer service means
-                  delivering proactive and immediate support to customers
-                  anytime on the channel of their choice — phone, email, text,
-                  chat, and more.
-                </p>
-              </section>
-              <!--//docs-intro-->
-            </header>
-            <section class="docs-section" id="item-2-1">
-              <h2 class="section-heading">Purpose</h2>
-
+    <!--//docs-sidebar-->
+    <div class="docs-content">
+      <div class="container">
+        <article class="docs-article" id="section-1">
+          <header class="docs-header">
+            <h1 class="docs-heading">Lab Updation Software</h1>
+            <section class="docs-intro">
               <p>
-                To ensure the needs and expectations of customers are met by the
-                organization and to ensure complete customer satisfaction.
+                Lab updation software is designed to provide lab technicians and
+                managers with a simple, intuitive interface that allows them to
+                easily view and update the status of orders.
               </p>
-              <h3 class="section-heading">Scope</h3>
-              <p>
-                Provide the customers with the best of service in terms of
-                production and logistics.
-              </p>
-
-              <ul>
-                <li>Process orders and request</li>
-                <li>
-                  Deal directly with customers either by phone, email, skype or
-                  WhatsApp
-                </li>
-                <li>Respond promptly to customer’s inquiries</li>
-                <li>Handle and resolve customer complaints</li>
-                <li>
-                  Obtain and evaluate all relevant information to handle
-                  inquiries and complaints
-                </li>
-                <li>
-                  Direct requests and unresolved issues to the designated
-                  resource / department /person
-                </li>
-                <li>
-                  Follow up internally on urgent orders, request, and complaints
-                </li>
-                <li>Prepare Service reports and other MIS reports</li>
-                <li>Providing complete dispatch details to customers</li>
-                <li>Maintain account statements of customers.</li>
-                <li>
-                  Working with IT team to automate and streamline work to
-                  achieve fast and error free processing.
-                </li>
-
-                <!--<li>We take orders from customers in different ways, some customers send us orders
-									through excel sheets in email</li>
-								<li>Customer sends all the information related to the ordered product in an excel sheet.
-								</li> 
-								<li>Customer service department prepares a master excel by taking the information from
-									the excel file</li>
-								<li>After creation of master excel it is uploaded in ERP for further processing of
-									orders</li> -->
-              </ul>
-
-              <!-- <h4>Collecting missing data, if any, from the Customer</h4>
-							<ul>
-								<li>When a customer places an order, Sometimes they miss to add some important values in
-									the ordered product, Customer service department corrects this missing data by
-									taking the missing data from the customer and sends the order for further processing
-								</li>
-							
-
-							<li>Suggesting modifications as per the Production Possibilities</li>
-							<ul>
-								<li>Sometimes the customer demands such things in the product order, according to which
-									it is not possible to make the product, in this condition, the customer service
-									department connects with the customer and does the modification according to which
-									it is possible to make the product.</li>
-							</ul>
-						-->
-
-              <!--
-							<ul>
-								
-								<li>The customer service department takes the order from the customer, after
-									verification and modification, places it in the ordering system.</li>
-							</ul>
-
-							<li>Taking measures in case of complaints from the Customers</li>
-							<ul>
-								<li>Customer service always takes appropriate steps for any customer problem so that the
-									customer's problem can be solved properly.</li>
-								<li>Whenever the customer has any problem, he contacts the customer service department.
-								</li>
-								<li>Whenever the customer has any problem, he contacts the customer service department.
-								</li>
-								<li>After getting the solution of the problem from the internal departments, the
-									customer service contacts the customer and provide the solution.</li>
-							</ul>
-						-->
             </section>
-
-            <section class="docs-section" id="item-2-2">
-              <h2 class="section-heading">Procedure</h2>
-
-              <ul>
-                <li>
-                  The orders received in excel form are processed using standard
-                  XL format.
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row col-12 col-md-12 row mb-3">
-                <a href="assets/images/excel_img.png" target="_blank"
-                  ><img
-                    class="figure-img img-fluid shadow rounded"
-                    src="assets/images/excel_img.png"
-                    alt=""
-                /></a>
-              </div>
-              <ul>
-                <li>
-                  The online orders are received in Microsoft Dynamics Axapta in
-                  under dedicated Customer Account number (EX/0000310) and are
-                  printed in lots through batch printing facility.
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/axapta_1.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/axapta_1.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/axapta_2.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/axapta_2.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  Once all the jobs are printed and checked/validated, the
-                  correct jobs are sent out for next process. The one with
-                  incorrect values / error jobs are mailed back to customer for
-                  confirmation.
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/oci_1.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/oci_1.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  After production completion, the ready lenses are dispatched
-                  to customer as per the schedule fixed. Invoices are shared
-                  with our courier partners and commercial team to prepare the
-                  dispatch documents.
-                </li>
-              </ul>
-
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/shipping_invoice.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/shipping_invoice.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  After dispatch, the quantity dispatched and value is shared
-                  with Accounts team, Invoices are generated in system.
-                </li>
-                <li>
-                  Once this is done, a system generated packing slip is
-                  generated which is shared with customer with other details
-                  like Invoice, AWB number in dispatch details. Account
-                  statement is also prepared by Customer Service Team
-                </li>
-              </ul>
-            </section>
-
-            <section class="docs-section" id="item-2-3">
-              <h2 class="section-heading">Check Points</h2>
-              <ul>
-                <li>
-                  While processing orders through Excel sheet, the generated
-                  orders are thoroughly cross checked before releasing for
-                  production.
-                </li>
-                <li>
-                  We also maintain a register to track down manually which
-                  orders are processed and released, jobs which are
-                  non-validated.
-                </li>
-                <li>
-                  f any jobs are not entered in the server, customers get online
-                  acknowledgement, so that they can rectify and re place the
-                  orders. All online orders are also checked by CS for any
-                  errors.
-                </li>
-                <li>
-                  Urgent orders / Re-order jobs are handed over separately to
-                  internal tracking team PPC for fast tracked and early
-                  dispatch.
-                </li>
-                <li>
-                  All Re-order and pending list is mailed to all concerned team
-                  internally for their follow ups and so that measurement can be
-                  taken.
-                </li>
-              </ul>
-
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/list_1.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/list_1.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="col-12 col-md-8 row mb-3">
-                  <a href="assets/images/list_2.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/list_2.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  We make sure any recurring issue is escalated to higher
-                  authority for their knowledge and proper action. Re orders and
-                  complaints are forwarded at
-                  <a href="mailto:labsupport@vrxlab.com" target="_blank"
-                    >labsupport@vrxlab.com</a
-                  >, where a dedicated team works on it to provide solution and
-                  close the complaint.
-                </li>
-
-                <li>
-                  Important Information is provided to different shift person
-                  through e-mail /phone /WhatsApp group.
-                </li>
-                <li>All sample jobs are processed carefully</li>
-                <li>All orders of a new customer is checked by seniors</li>
-                <li>
-                  New product launched are checked thoroughly by seniors ,
-                  before releasing to prod it is cross checked by LMS team also
-                  to see if all technical info is coming correctly.
-                </li>
-              </ul>
-            </section>
-
-            <section class="docs-section" id="item-2-4">
-              <h2 class="section-heading">Traceability</h2>
-              <p>
-                Each Customer needs to have unique Customer Account No created
-                in ERP like EX/0000310 (Bolle Protection) to place the order and
-                for easy tracking .When an ECP places an order with Reference
-                Number of his own, against each reference number of the order
-                from the Customer, a unique OCI No like EXP/917740/15 is created
-                in the ERP system. To maintain uniqueness, the last two digits
-                change in ERP once we reach 9, 99,999.
-              </p>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/gkb_1.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/gkb_1.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  Against OCI Number, a Barcode generates, which help the
-                  organization and end users to track and process the orders
-                  efficiently and then tracked for the status in Production.
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/oci_2.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/oci_2.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  We maintain / keep the data at different servers since the
-                  inception of ERP from 2003 onwards. The latest server contains
-                  data from 2018 onwards.
-                </li>
-                <li>
-                  In the job ticket (LMS sheet) we have production barcodes,
-                  which is scanned to change the status at different production
-                  level to trace the exact location of the order in prod. The
-                  Status log helps us to understand whether an order is still in
-                  process or dispatched / invoiced.
-                </li>
-              </ul>
-
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/scan_1.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/scan_1.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/orders_2.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/orders_2.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  In the job card we have production plan mentioned which
-                  indicates through which surfacing stage the order has to move.
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/orders_3.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/orders_3.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  Online customers can also track real time status of their
-                  orders. The updated file is uploaded automatically in “File
-                  Transfer Application “which customers can download and see the
-                  status & also track the real status of their excel orders via
-                  below web link.
-                </li>
-              </ul>
-
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/filetransfer_1.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/filetransfer_1.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <h4>Flow Chart</h4>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/flowchart_1.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/flowchart_1.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </section>
-            <!--//section-->
-          </article>
-
-          <!--//docs-article-->
-          <article class="docs-article" id="section-3">
-            <header class="docs-header">
-              <h1 class="docs-heading">Inventory</h1>
-              <section class="docs-intro">
-                <p>
-                  Inventory refers to the products that are ready to sell, along
-                  with the raw materials that are used to produce them. There
-                  are three general categories of inventory, including raw
-                  materials (any supplies that are used to produce finished
-                  products), work-in-progress (WIP), and finished products or
-                  those that are ready for sale.
-                </p>
-                <p>
-                  Inventory management allows businesses to minimize inventory
-                  costs as they create or receive products on an as-needed
-                  basis.
-                </p>
-                <p>Inventory is divided according to two types of lenses</p>
-                <ul>
-                  <li>Stock Lens (Finished Lens)</li>
-                  <li>RX Lens (Semi Finished Lens)</li>
-                </ul>
-
-                <h4>Stock Lens (Finished Lens)</h4>
-                <p>
-                  These lenses are pre-manufactured with a certain base curve,
-                  prescription and blank size. The lenses are then coated with
-                  anti-glare, anti-scratch or both(As per customer requirement),
-                  and packaged for retail.
-                </p>
-
-                <h4>RX Lens (Semi Finished Lens)</h4>
-                <p>
-                  Semi-finished lens is the raw blank lens used to produce the
-                  most individualized RX lens according to the customer’s
-                  requirement. Different prescription powers request for
-                  different semi-finished lens types or base curves, it goes
-                  through multiple processes (Surfacing, Coating, Tinting etc)
-                  Depending on requirement of particular order.
-                </p>
-              </section>
-              <!--//docs-intro-->
-            </header>
-            <section class="docs-section" id="item-3-1">
-              <h3 class="section-heading">Purpose</h3>
-              <p>
-                To ensure that adequate control is exercised for receipt,
-                handling, storage and preservation of product.
-              </p>
-              <h3 class="section-heading">Scope</h3>
-              <ul>
-                <li>
-                  The procedure covers all the materials required for uncut lens
-                  production.
-                </li>
-                <li>
-                  Semi Finish and Finish lens Store HOD is responsible for
-                  implementation of this procedure.
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-3-2">
-              <h3 class="section-heading">Order Issue</h3>
-              <ul>
-                <li>
-                  The online orders are received from CS Department (via PPC)
-                </li>
-                <li>Orders are received in Microsoft Dynamics Axapta</li>
-                <li>
-                  The appropriate product needs to be issued to the each order.
-                </li>
-                <li>
-                  In the first step to issue the order we have to find OCI using
-                  OCI number in dynamic Axapta
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/oci_find.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/oci_find.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  After finding the OCI we have to add the lens details inside
-                  the <strong> Raw Materials tab </strong>
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/raw_material.jpg" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/raw_material.jpg"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  After adding the lens details, next step is to issue the order
-                  from inventory
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/issue_inventory.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/issue_inventory.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>In the final step the order is issued to the lab</li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/issuetolab.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/issuetolab.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </section>
-
-            <section class="docs-section" id="item-3-3">
-              <h3 class="section-heading">Order Issue Using OPC</h3>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-1-1">
+            <h2 class="section-heading">Procedure</h2>
+            <ol>
               <li>
-                In Dynamic Axapta inside the Automation Menu, select the
-                Domestic Stock Issue or Export Stock Issue Depending upon the
-                type of order
+                <h5>
+                  To open the lab updation portal we will click on the
+                  below-given link.
+                </h5>
               </li>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a
-                    href="assets/images/bulk_order_processing.png"
-                    target="_blank"
+              <li>
+                <a
+                  href=" https://uatperf-vrxorder.azurewebsites.net/#/online/login"
+                  target="_blank"
+                  >Click here</a
+                >
+              </li>
+              <li>
+                <p>After clicking on the above link this screen will appear.</p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/homepage.png" target="_blank"
                     ><img
                       class="figure-img img-fluid shadow rounded"
-                      src="assets/images/bulk_order_processing.png"
+                      src="assets/images/homepage.png"
                       alt=""
                   /></a>
                 </div>
-              </div>
-              <ul>
-                <li>Scan the OCI</li>
-                <li>
-                  In this process we dont have to type the Left Eye and Right
-                  Eye lens value manually we directly can scan the OPC code of
-                  respective lens
-                </li>
-                <li>Scan the OPC code of Right Eye lens</li>
-                <li>Scan the OPC code of Left Eye lens</li>
-                <li>
-                  After scanning OPC codes of both Eyes the order is now issued
-                </li>
-              </ul>
-            </section>
-
-            <section class="docs-section" id="item-3-4">
-              <h3 class="section-heading">FSV Store Order Processing</h3>
-              <p>We use this procees to issue the stock orderes in the bulk</p>
-              <ul>
-                <li>Get orders via Email from CS Department</li>
-                <li>We have created master excel format for taking orders</li>
-                <li>
-                  Convert the customer order format to company’s standard format
-                </li>
-                <li>
-                  Print out of mail body of the order along with the order sheet
-                  is handed over to the picking person
-                </li>
-                <li>Picking person goes to inventory to pick the lenses.</li>
-                <li>
-                  Average picking time: One person takes 4 hours to pick 1000
-                  pcs
-                </li>
-                <li>
-                  Once the FSV lenses are picked, they are bifurcated as per
-                  customer requirement
-                </li>
-                <li>
-                  If the lens requires Coating (HC/HMC) and Tinting as per the
-                  requirement, the lens is sent to the coating and tinting labs
-                  for processing, and after completing these processes lenses
-                  are sent for packing
-                </li>
-                <li>
-                  According to the requirement if the lens does not require
-                  coating and tinting, then the lens is sent for packing
-                </li>
-              </ul>
-              <h5>
-                There are two types of techniques used for packing, according to
-                the customer's requirement;
-              </h5>
-
-              <ul>
-                <li>Automatic Packing using Autopacker Machine</li>
-                <li>Manual Packing</li>
-              </ul>
-              <h4>Automatic Packing</h4>
-              <ul>
-                <li>
-                  Average Packing time: One person takes 3 hours to pack 1000
-                  pcs using Autopacker machine, Depending on number of types of
-                  lenses contained in a consignment (Colour and Coating) this
-                  process takes more or less time (since manual intervention is
-                  required while inputting type)
-                </li>
-                <li>
-                  In addition, certain customer require different envelopes for
-                  different types, so that change also needs to be made
-                  manually.
-                </li>
-              </ul>
-              <h4>Manual Packing</h4>
-              <ul>
-                <li>
-                  Average Packing Time: One Person takes 6 hours to pack 1000
-                  pcs
-                </li>
-                <li>
-                  Certain customers (lower %) demand manual packing of lenses
-                  and this/ process take double the time of automatic packing.
-                </li>
-              </ul>
-
-              <h4>Scanning (By Barcode Scanner)</h4>
-              <ul>
-                <li>
-                  Average Scanning time: one person takes 1 hour to scan 1000
-                  pcs
-                </li>
-                <li>
-                  This is the maximum efficiency i.e. where the barcodes are
-                  just on the top of the envelope and so the entire envelope
-                  does not need to be lifter for scanning.
-                </li>
-              </ul>
-              <h4>In Box Arrangement</h4>
-              <ul>
-                <li>
-                  This process is used to arrange the packed lens boxes and it
-                  requires an average of 15-20 minutes
-                </li>
-              </ul>
-            </section>
-
-            <section class="docs-section" id="item-3-5">
-              <h3 class="section-heading">Raw Material Replace</h3>
-              <p>
-                If there is a need to change the Raw material in any particular
-                order, we have to follow these steps..
-              </p>
-              <ul>
-                <li>We have to find the order in Axapta by Scanning the OCI</li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/raw_mat_replace.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/raw_mat_replace.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  Now we have to select the eye for which the lens needs to be
-                  replaced
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/select_eye.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/select_eye.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>Now we have to click on the Populate button</li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/populate_1st_time.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/populate_1st_time.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  After clicking the Populate button we have to add the values
-                  in Right Eye Raw Materials and Left Eye Raw materials fields
-                </li>
-                <li>
-                  Now we have to click on the Exchange Raw Material ButtonGroup
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/after_populate.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/after_populate.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  Now the status of order is changed to "Issued by Inventory"
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a
-                    href="assets/images/after_populate_change.png"
-                    target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/after_populate_change.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  Again Status is changed to Send to Lab and Return to Lab
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/status_change.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/status_change.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </section>
-
-            <!--//section-->
-
-            <section class="docs-section" id="item-3-6">
-              <h3 class="section-heading">Production Loss Booking</h3>
-              <p>
-                Product Loss means any loss of Product occurring as a damage to
-                Product caused by the failure of the handling, testing or
-                storage of Product.
-              </p>
-              <p>
-                Production loss also occurs when the product is not made
-                according to the given requirements. when the product loss
-                happen we have to replace the product with a new product.
-              </p>
-
-              <ul>
-                <li>
-                  To issue a new product, we have to scan the OCI to find the
-                  particular order in which the material needs to be reissued
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/production_loss.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/production_loss.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  Now we have to Select Department and select the option from a
-                  drop-down menu to provide the reason for the loss of product
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/select_dept.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/select_dept.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>Now put the material details to issue a new product</li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/put_materials.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/put_materials.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  Now we have to click on the Create Journal button to create a
-                  new Journal Number
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/create_journal.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/create_journal.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>
-                  After creating Journal number we have to click on the Labs
-                  button and select the option - Return to Lab, after selecting
-                  the option a dropdown menu will open, from this dropdown menu
-                  we have to choose the specific lab
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/oci_return.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/oci_return.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>Optware Calculation Sheet (For Rodenstock Orders)</li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/optware_calc.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/optware_calc.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </section>
-
-            <!--//section-->
-
-            <section class="docs-section" id="item-3-7">
-              <h3 class="section-heading">Force Base Calculation</h3>
-              <p>
-                For some orders when the inventory of any SKU (Supplier) is out
-                of stock, we can use the same SKU of alternative supplier by
-                using force base calculation.
-              </p>
-              <ul>
-                <li>Scan OCI</li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a
-                    href="assets/images/force_base_calculation.png"
-                    target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/force_base_calculation.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>Scan OPC Code for both Right Eye and Left Eye</li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/scan_re_le.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/scan_re_le.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-
-              <ul>
-                <li>Send Job To Lensware</li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/send_job_lensware.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/send_job_lensware.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>Updated lensware is printed on designated printer.</li>
-              </ul>
-            </section>
-          </article>
-
-          <article class="docs-article" id="section-4">
-            <header class="docs-header">
-              <h1 class="docs-heading">Dispatch</h1>
-              <section class="docs-intro">
+              </li>
+              <li>
                 <p>
-                  Dispatching is a process of managing the movement of product
-                  to meet production plans or customer demand. Dispatch team
-                  ensure that the correct products are delivered to the correct
-                  location at the correct time. It forms the foundation of the
-                  overall delivery operation.
+                  There is a checkbox(VRX AD User) on the right side of the
+                  website, Click on the VRX AD User checkbox.
                 </p>
-              </section>
-
-              <!--//docs-intro-->
-            </header>
-            <section class="docs-section" id="item-4-1">
-              <h2 class="section-heading">Procedure</h2>
-              <p></p>
-              <ul>
-                <li>Dispatch team receives the packed lens from final QC</li>
-                <li>
-                  Dispatch team shortlists the packed lens according to customer
-                  with required customer information, status of order is changed
-                  to “Delivered to customer”
-                </li>
-                <li>
-                  Sends the customer wise delivery report to CS team which
-                  contains total quantity and value of product to be dispatched
-                </li>
-                <li>
-                  The CS team prepares customs invoice, and sends these details
-                  to the logistic department, courier partners and commercial
-                  department
-                </li>
-                <li>
-                  Customized packaging is done according to different Customers
-                </li>
-                <li>
-                  Logistic department receives Customs invoice from CS Team
-                </li>
-                <li>
-                  Create Label / Airway bill with different logistic service
-                  providers with booking of shipments
-                </li>
-                <li>
-                  Send the AWB and pickup request to Logistics provider,
-                  Customer service department and commercial department
-                </li>
-                <li>
-                  Arrange and check parcels and documents as per check list
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/dispatch_checklist.png" target="_blank"
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/checkbox.png" target="_blank"
                     ><img
                       class="figure-img img-fluid shadow rounded"
-                      src="assets/images/dispatch_checklist.png"
+                      src="assets/images/checkbox.png"
                       alt=""
                   /></a>
                 </div>
-                <ul>
-                  <li>Vehicle movement (UPS/DHL/Fedex/Aramex/Air Freight)</li>
-                  <li>
-                    Handover to Forwarding Agent – To do customs
-                    clearance/Flight connectivity
-                  </li>
-                  <li>
-                    Shipment Follow up with Forwarders and courier partners till
-                    the delivery to customer
-                  </li>
-                </ul>
-                <h4>Process Flow</h4>
-                <div class="simplelightbox-gallery row mb-3">
-                  <div class="col-12 col-md-12 row mb-3">
-                    <a href="assets/images/logistics_flow.png" target="_blank"
-                      ><img
-                        class="figure-img img-fluid shadow rounded"
-                        src="assets/images/logistics_flow.png"
-                        alt=""
-                    /></a>
-                  </div>
+              </li>
+
+              <li>
+                <p>Now the screen will look like this</p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/checked.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/checked.png"
+                      alt=""
+                  /></a>
                 </div>
-              </div>
-            </section>
+              </li>
 
-            <!--//section-->
-          </article>
-          <!--//docs-article-->
+              <li>
+                <p>Now enter your Login ID In the User Name field.</p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/username.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/username.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
 
-          <article class="docs-article" id="section-5">
-            <header class="docs-header">
-              <h1 class="docs-heading">Accounts</h1>
-              <section class="docs-intro">
+              <li>
+                <p>After entering the Username, click on the Login Button.</p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/login.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/login.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
+              <li>
                 <p>
-                  The accounting department refers to the division that looks
-                  after the preparation of financial statements, maintenance of
-                  general ledger, payment of bills, preparation of customer
-                  bills, payroll, and more. In other words, they are responsible
-                  for managing the overall economic front of the business.
+                  After clicking on the Login button, the Dashboard screen will
+                  appear like this.
                 </p>
-              </section>
-            </header>
-            <section class="docs-section" id="item-5-1">
-              <h2 class="section-heading">Procedure</h2>
-              <p>
-                Accounts department receives the orders details from CS
-                department through Email.
-              </p>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/email.png" target="_blank"
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/dashboard.png" target="_blank"
                     ><img
                       class="figure-img img-fluid shadow rounded"
-                      src="assets/images/email.png"
+                      src="assets/images/dashboard.png"
                       alt=""
                   /></a>
                 </div>
-              </div>
-              <p>
-                If the order contains freight and insurance details, we have to
-                create the sales order.
-              </p>
-              <p>
-                If the order does not contain freight and insurance details, we
-                do not have to create the sales order.
-              </p>
-            </section>
-            <!--//section-->
+              </li>
 
-            <section class="docs-section" id="item-5-2">
-              <h2 class="section-heading">Sales Order</h2>
-              <ul>
-                <li>Sales Orders are created in Microsoft Dynamics Axapta</li>
-                <li>
-                  In Dynamic AX, inside the Account Recievable select the "All
-                  Sales orders"
-                </li>
-                <li>
-                  To create new sales order press the Ctrl + N keys together
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/sales_order.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/sales_order.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>Now the new sales order creation window will open</li>
-                <li>
-                  There are 2 rows in the table, in the first row we add the
-                  freight charge in the "Unit Price" Column
-                </li>
-                <li>
-                  In 2nd row, we add insurance Charge in the "Unit Price" Column
-                </li>
-                <li>
-                  After adding the values, we click on the "Packing slip"
-                  button, and the order status is now changed to delivered
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-5-3">
-              <h2 class="section-heading">Updating the Number Sequence</h2>
-              <p></p>
-              <ul>
-                <li>
-                  Number Sequence is to be updated in Microsoft Dynamics Axapta
-                  under the dedicated Customer Account number
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/number_sequence.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/number_sequence.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  Add the "From Date" and "To Date" as per the delivery date of
-                  particular order
-                </li>
-                <li>Click on the "List Order" Button</li>
-                <li>After this click on "Update Order" Button</li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-5-4">
-              <h2 class="section-heading">Invoice</h2>
-              <p></p>
-              <ul>
-                <li>
-                  Invoice Details needs to be updated in Microsoft Dynamics
-                  Axapta under the dedicated Customer Account number
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/invoice.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/invoice.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-              <ul>
-                <li>Order status is delivered</li>
-                <li>
-                  Add the "From Date" and "To Date" as per the delivery date of
-                  particular order
-                </li>
-                <li>Click on the "Ok" Button</li>
-                <li>Now in the OCI list screen, click on the Total button</li>
-                <li>
-                  The total invoice amount should be equal to the amount given
-                  in the mail by CS department
-                </li>
-                <li>If both values are same, click on "Update Order" Button</li>
-                <li>Now Click on the "Batch" Button</li>
-                <li>
-                  Select Yes in Batch processing option, and click on "OK"
-                  button
-                </li>
-              </ul>
-            </section>
-          </article>
-          <!--//docs-article-->
-
-          <article class="docs-article" id="section-6">
-            <header class="docs-header">
-              <h1 class="docs-heading">Lens Production</h1>
-              <section class="docs-intro">
+              <li>
                 <p>
-                  Lens production involves a series of steps that transform raw
-                  materials into a finished lens product. after receiving the
-                  blank lenses from the inventory, the next step is Surfacing.
+                  "In the left side of the screen in the sidebar, there is a
+                  Process button, click on this button.
                 </p>
-              </section>
-              <!--//docs-intro-->
-            </header>
-            <section class="docs-section" id="item-6-1">
-              <h2 class="section-heading">Surfacing</h2>
-              <p>
-                Surfacing is the process by which prescription is placed onto a
-                lens and preparing its surface prior to being cut for the frame.
-              </p>
-              <p>There are two types of techniques used for surfacing</p>
-              <ol>
-                <li>Traditional Surfacing</li>
-                <li>Digital Surfacing</li>
-              </ol>
-              <p>
-                <strong>Traditional surfacing</strong> techniques involve the
-                process of grinding and polishing the lenses to their desired
-                prescription and finish. The process involves shaping the lens
-                using specialized grinding machines and polishing it to remove
-                any roughness or imperfections on the surface.
-              </p>
-              <p>
-                <strong>Digital Surfacing</strong> is a lens making process that
-                removes the hard tooling limitations of traditional surfacing.
-                with digital surfacing, labs can produce unlimited shapes and
-                exceptional accuracy on one or two surfaces of the lens to
-                achieve the intended design.
-              </p>
-              <p>Surfacing is done in following steps:</p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/process_button.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/process_button.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
 
-              <ol>
-                <li>Calculation</li>
-                <li>Unpacking and Blank checking</li>
-                <li>Taping</li>
-                <li>Blocking</li>
-                <li>Generation</li>
-                <li>Engraving (In Digital Surfacing)</li>
-                <li>Smoothing (In Traditional Surfacing)</li>
-                <li>Polishing</li>
-                <li>D-Blocking</li>
-              </ol>
-              <h2 class="section-heading">Lens Calculation system</h2>
-              <p>
-                Calculating the Precal and Non Precal order, Precal is a lens
-                calculation process which predetermines the thickness of a
-                glazed lens, based on frame shape, prescription and centration.
-                Precal calculates the minimum centre thickness to which a lens
-                can be surfaced to provide the thickness appropriate to the
-                lens/ mount combination. The Precal calculation will only be
-                applied when specified by the customer or when stock lenses
-                cannot be used due to the frame type e.g. semi-rimless (supra)
-                or rimless mounts.
-              </p>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-6-3">
-              <h2 class="section-heading">Unpacking and Blank Checking</h2>
-              <ul>
-                <li>Check Jobslip description matches lens box label</li>
-                <li>Check TYPE OF LENS, BASE CURVE and ADD POWER</li>
-                <li>
-                  Take lenses out of boxes and put lens blanks in the job tray
-                </li>
-                <li>
-                  Check for any DEFECT in the blank, If defect found return the
-                  lens to stores (check transition lens Colour before taping)
-                </li>
-                <li>Priority for Urgent and Rework orders</li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-6-4">
-              <h2 class="section-heading">Taping</h2>
-              <ul>
-                <li>
-                  A special surface saver tape is applied on to the front
-                  surface of the lens to prevent it from any damage
-                </li>
-                <li>
-                  Ensure tape is wrinkle free and firmly in contact with lens at
-                  the edge
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-6-5">
-              <h2 class="section-heading">Blocking</h2>
-              <ul>
-                <li>
-                  After Taping the semi finished lens is then blocked on CNC
-                  blockers using low melting alloys
-                </li>
-                <li>
-                  Blocking required for holding the semi finished blank with the
-                  chuck holder for further process
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-6-6">
-              <h2 class="section-heading">Generation</h2>
-              <ul>
-                <li>
-                  Here the semi finished lens is cut to its final curve and
-                  thickness
-                </li>
-                <li>This operation is done on a machine called generator.</li>
-                <li>
-                  This is a versatile machine, which can cut the desired curve
-                  on the semi finished lens surface, fast and accurate.
-                </li>
-                <li>
-                  Generation is a critical step in the production of lenses, as
-                  it establishes the initial curvature and prescription of the
-                  lens and sets the foundation for the remaining steps in the
-                  manufacturing process.
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-6-7">
-              <h2 class="section-heading">
-                Engraving <small>(In Digital Surfacing)</small>
-              </h2>
-              <ul>
-                <li>
-                  CO2 laser engraving is used in lens production for a variety
-                  of purposes, including adding visual designs and functional
-                  markings to the lens surface.
-                </li>
-                <li>
-                  CO2 Laser engraving machine providing the customize engraving
-                  and logo
-                </li>
-                <li>
-                  it is a versatile and precise technique that is used to add a
-                  variety of visual and functional elements to lenses during the
-                  manufacturing process.
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-6-8">
-              <h2 class="section-heading">
-                Smoothing <small>(In Traditional Surfacing)</small>
-              </h2>
-              <ul>
-                <li>
-                  Smoothing is an important step in traditional surfacing in
-                  lens production that involves refining the surface of the lens
-                  to achieve the desired shape and smoothness. This step is
-                  typically performed after the lens has been ground to the
-                  correct curvature and prescription.
-                </li>
-                <li>
-                  Smoothing is removing the grinding marks from the surface of
-                  the semi finished lens without changing its curvature. Here
-                  the lens is brought to the exact curve required and surface is
-                  smoothened not to have any mark or scratches.
-                </li>
-                <li>
-                  The goal of the smoothing process is to achieve a smooth and
-                  uniform surface on the lens, with no visible scratches, pits,
-                  or other imperfections that could affect the visual quality of
-                  the final product. This step is critical to achieving a
-                  high-quality lens that meets the required specifications for
-                  the prescription and curvature.
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-6-9">
-              <h2 class="section-heading">Polishing</h2>
-              <ul>
-                <li>
-                  After the lens is generated and fine ground, it undergoes
-                  polishing. Depending on how precise the generation is, the
-                  lens go through several stages of polishing
-                </li>
-                <li>
-                  6 Axis Polishing machine is used for final surface polishing
-                </li>
-                <li>
-                  Once the polishing process is complete, the lens surface is
-                  thoroughly cleaned and inspected to ensure that it meets the
-                  required specifications for the prescription and curvature.
-                  Any remaining defects or imperfections may be addressed
-                  through additional polishing or other corrective measures.
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-6-10">
-              <h2 class="section-heading">D-Blocking and Lens Cleaning</h2>
-              <ul>
-                <li>Remove the finished lens with chuck holder</li>
-                <li>
-                  After D-Blocking the final Cleaning and checking is done
-                </li>
-                <li>
-                  The final cleaning step is critical to ensure that the lenses
-                  are free of any contaminants and ready for use. By carefully
-                  following the proper cleaning procedures, we can ensure that
-                  the lenses meet the required specifications and provide
-                  optimal visual quality for the end user.
-                </li>
-              </ul>
-            </section>
-
-            <!--//section-->
-          </article>
-          <!--//docs-article-->
-
-          <article class="docs-article" id="section-7">
-            <header class="docs-header">
-              <h1 class="docs-heading">Quality Control</h1>
-              <section class="docs-intro">
+              <li>
                 <p>
-                  To ensure that lenses do not have any surface defect, have the
-                  right thickness and accurate power; stringent quality check is
-                  done using high-end lensometers by our qualified personnel.
+                  After clicking on the Process button, this screen will appear.
                 </p>
-              </section>
-              <!--//docs-intro-->
-            </header>
-            <section class="docs-section" id="item-7-1">
-              <h2 class="section-heading">Pre QC/ Surfacing QC</h2>
-              <p>In surfacing QC, there are three quality checks:</p>
-              <ul>
-                <li>Lens Checking</li>
-                <li>Cosmetics & Surface check</li>
-                <li>Segregation</li>
-              </ul>
-              <ul>
-                <li>
-                  <h3>Lens Checking</h3>
-
-                  <p>
-                    Each lenses undergoes pre quality checks after surfacing to
-                    ensure all quality parameters as per ISO 14889 & 8980 STDs.
-                    In Quality VRX uses high precession & reliable instruments
-                    like Focovision & Automapper from Automation & Robotics and
-                    LM600 from Nidek.
-                  </p>
-                  <h4>
-                    Specialized machine (Automapper from Automation & Robotics)
-                  </h4>
-                  <p>
-                    In Automapper the lenses are controlled automatically with
-                    detection of micro engraving & Shape parameters for accurate
-                    Optical, Cosmetic & Geometrical parameters along with
-                    contactless thickness measurements. The inbuilt Dual Mapping
-                    is important for inspection of whole surface and meaning
-                    full process control. It works by Reflection i.e. Lens
-                    Positioning & Tilt & by Transmission for Optical mapping for
-                    accurate inspection of Single Vision & Progressive lenses.
-                    This ensure utmost performance of lens designs.
-                  </p>
-                </li>
-                <li>
-                  <h3>Cosmetics & Surface check</h3>
-                  <p>
-                    After Lens checking lenses goes for Cosmetics & Surface
-                    checks to confirm each lenses qualifies as per Essilor's
-                    cosmetic Stds.
-                  </p>
-                </li>
-                <li>
-                  <h3>Segregation:</h3>
-                  <p>
-                    Finally lenses are segregated based on Value addition,
-                    Coating & service wise to transfer to next process.
-                  </p>
-                </li>
-              </ul>
-
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-12 col-md-12 row mb-3">
-                  <a href="assets/images/segregation.png" target="_blank"
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/domestic+export.png" target="_blank"
                     ><img
                       class="figure-img img-fluid shadow rounded"
-                      src="assets/images/segregation.png"
+                      src="assets/images/domestic+export.png"
                       alt=""
                   /></a>
                 </div>
-              </div>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-7-2">
-              <h2 class="section-heading">Final QC /Coating QC</h2>
-              <p>
-                After final processes lenses undergoes for a stringent final
-                control as a second layer of quality to ensure perfect quality
-                products.
-              </p>
-
-              <h3>Final Quality processes</h3>
-              <ul>
-                <li>Final Inspection</li>
-                <li>Stamping/Yellow marking</li>
-                <li>Packaging</li>
-                <li>Fog ID & Authenticity card</li>
-              </ul>
-
-              <ul>
-                <li>
-                  <h3>Final Inspection</h3>
-                  <p>
-                    Each lenses undergoes final quality specially for
-                    Coating/Tint along with others quality parameters as per
-                    STDs.
-                  </p>
-                </li>
-
-                <li>
-                  <h3>Stamping/Yellow Marking</h3>
-                  <p>
-                    All Progressive & Digital SV lenses undergoes stamping
-                    before packaging as a standard process. VRX uses more than
-                    1000 products based stamping for the customers. Around 1000
-                    types of customized stamping doing at VRX.
-                  </p>
-                </li>
-
-                <li>
-                  <h4>
-                    Specialized machine (AutoInker from Automation & Robotics)
-                  </h4>
-                  <p>
-                    Fully automated digital inking machine having product
-                    position system with detection of Micro engraving and shape
-                    measurement for accurate stampings.
-                  </p>
-                </li>
-                <li>
-                  <h3>Packaging</h3>
-                  <p>
-                    Finally the lenses goes for Barcode level printing &
-                    Enveloping. VRX uses more than 100 types of customised
-                    envelops for the customers.
-                  </p>
-                </li>
-
-                <li>
-                  <h4>
-                    Specialized machine (AutoPacker from Automation & Robotics)
-                  </h4>
-                  <p>
-                    Most advanced and fully automatic Packaging unit for
-                    prescribed lenses from Automatic & Robotics. Automatic
-                    choice and printing of customised barcodes & envelops. High
-                    capacity facilitate for faster & mistake proof deliveries.
-                  </p>
-                </li>
-
-                <li>
-                  <h3>Fog ID/Authenticity</h3>
-                  <p>
-                    VRX also provides FOG ID along with micro engraving as a
-                    Product/Brand identification along with Authenticity cards.
-                    Fog id masks have different-different id marked on them
-                    according to the product and according to the customer
-                    demand.
-                  </p>
-                </li>
-
-                <li>
-                  <h4>Fog ID</h4>
-                  <div class="simplelightbox-gallery row mb-3">
-                    <div class="col-8 col-md-8 row mb-3">
-                      <a href="assets/images/fogid.png" target="_blank"
-                        ><img
-                          class="figure-img img-fluid shadow rounded"
-                          src="assets/images/fogid.png"
-                          alt=""
-                      /></a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <h4>Authenticity Card</h4>
-                </li>
-              </ul>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-6 col-md-6 row mb-3">
-                  <a href="assets/images/authenticity1.png" target="_blank"
+              </li>
+              <li>
+                <p>Now click on the Update Domestic Site Status Button.</p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/domestic.png" target="_blank"
                     ><img
                       class="figure-img img-fluid shadow rounded"
-                      src="assets/images/authenticity1.png"
+                      src="assets/images/domestic.png"
                       alt=""
                   /></a>
                 </div>
-                <div class="col-6 col-md-6 row mb-3">
-                  <a href="assets/images/authenticity2.png" target="_blank"
-                    ><img
-                      class="figure-img img-fluid shadow rounded"
-                      src="assets/images/authenticity2.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </section>
-            <!--//section-->
-          </article>
-          <!--//docs-article-->
+              </li>
 
-          <article class="docs-article" id="section-8">
-            <header class="docs-header">
-              <h1 class="docs-heading">Tint</h1>
-              <section class="docs-intro">
+              <li>
                 <p>
-                  Tinting is done on lenses to protect eyes from glare of sun &
-                  as such tinted glasses are basically sun glasses.
+                  After clicking on the "Update Domestic Site Status Button",
+                  this screen will appear.
+                </p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/dom_dashboard.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/dom_dashboard.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
+
+              <li>
+                <p>
+                  In this screen, There is a Dropdown menu to select the Lab,
+                  click on this dropdown menu button.
+                </p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/dropdown.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/dropdown.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
+
+              <li>
+                <p>
+                  After clicking on the dropdown menu button, there will be a
+                  list of options to select, these options will be different for
+                  the users of different departments.
                 </p>
                 <p>
-                  In the tinting process chemical (Dye) are prepared and the
-                  process takes place in hot bath of dyes along with lenses to
-                  obtain the color as required. Lenses undergo dyeing in dark
-                  colors and the colored lenses protect the glare of sun from
-                  reaching to the eyes.
+                  (<strong>For example </strong> if we login as Surfacing Lab
+                  user, the options will be shown only related to the Surfacing
+                  lab, similarly for other departments like Coating, Tinting
+                  etc.)
                 </p>
-              </section>
-              <!--//docs-intro-->
-            </header>
-
-            <section class="docs-section" id="item-8-1">
-              <h2 class="section-heading">Types of Tint</h2>
-              <p>
-                Now a day’s lots of various colors and patterns are being
-                required by customers often for aesthetic requirement.
-              </p>
-              <ul>
-                <li>Solid:- Single color in full lens</li>
-                <li>Gradient :- Partial Color</li>
-                <li>Bi-Color:- Two colors in one lens</li>
-                <li>
-                  Special Tint: - Lenses made as per customer requirement for
-                  color.
-                </li>
-                <li>
-                  Tri-Color: - Lens have band of color at top & bottom, the
-                  middle part of the lens is kept clear.
-                </li>
-                <li>UV Process Tinting</li>
-              </ul>
-
-              <h3>Material on which tinting is done-Index</h3>
-              <ul>
-                <li>1.5</li>
-                <li>High Index (1.6 & 1.67)</li>
-                <li>Poly</li>
-                <li>Trivex</li>
-                <li>1.74</li>
-                <li>Polarized – Grey A</li>
-              </ul>
-
-              <h3>Brief description of Colors</h3>
-              <p>
-                Solid colors Grey, Green & Brown are made as per requirement of
-                customer. These constitute about 80% of total tint orders.
-                Remaining 20% orders are constitute of Gradient, Special tint
-                orders and Bi-Colors.
-              </p>
-            </section>
-
-            <section class="docs-section" id="item-8-2">
-              <h2 class="section-heading">
-                Master Tint Sample & Working Tint Sample
-              </h2>
-              <p>
-                We maintain library of master samples, which are approved for
-                color and other parameters by customer and are used to make
-                working sample checking at various stage of Tint Production &
-                Tint QC.
-              </p>
-              <p>
-                We made in-house tint working samples from Master Tint sample
-                for daily production references and change this working sample
-                quarterly ( as working samples may get affected due to continues
-                usage).
-              </p>
-              <p>
-                Master samples are kept in lock key and are stored & perverse
-                for reference purpose. Tint samples, which work as color master
-                for comparing, checking as part of quality control.
-              </p>
-
-              <h4>Tint Sample Master display</h4>
-              <div class="simplelightbox-gallery row mb-3">
-                <div class="col-6 col-md-6 row mb-3">
-                  <a href="assets/images/master_display1.jpg" target="_blank"
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/drop_options.png" target="_blank"
                     ><img
                       class="figure-img img-fluid shadow rounded"
-                      src="assets/images/master_display1.jpg"
+                      src="assets/images/drop_options.png"
                       alt=""
                   /></a>
                 </div>
-                <div class="col-6 col-md-6 row mb-3">
-                  <a href="assets/images/master_display2.jpg" target="_blank"
+              </li>
+
+              <li>
+                <p>
+                  Select the option as per the requirement, in this example, we
+                  are logged in as a Digital Surfacing department user, and we
+                  are issuing the order to QC DS Gurgaon, So we have selected
+                  Option "DG15-GF-01-Issued To QC-DRS-GRG.
+                </p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/drop_options.png" target="_blank"
                     ><img
                       class="figure-img img-fluid shadow rounded"
-                      src="assets/images/master_display2.jpg"
+                      src="assets/images/drop_options.png"
                       alt=""
                   /></a>
                 </div>
-              </div>
-            </section>
-            <!--//section-->
+              </li>
 
-            <!--//section-->
-
-            <section class="docs-section" id="item-8-3">
-              <h2 class="section-heading">Procedure</h2>
-              <p>
-                The Tinting of lenses is a wet & hot process in which the lenses
-                are immersed in hot liquid dyes, the heat opens the small pores
-                of the lenses and colored dyed particles impregnate the surface
-                of the lenses, making the lenses to achieve the color of the
-                dyes.
-              </p>
-              <p>
-                After tinting of lenses, colored lenses are compared with a pre-
-                approved sample to ensure it has been made as per requirement.
-              </p>
-
-              <h3>Procedure for Rx/ Stock Tinting</h3>
-              <p>
-                Rx/ Stock tinting refers to the process of adding color to a
-                lens to change its appearance or to enhance its performance. The
-                procedure for Rx/ Stock tinting generally involves the following
-                steps:
-              </p>
-              <ul>
-                <li>
-                  <h4>Preparation of Machine</h4>
-                  <p>
-                    Pre- Heat clean machine tanks filled with water for 30 mins
-                    → Tank temperature should reach 80°c, for adding the color
-                    and take care to stir the water to mix the dyes for
-                    homogeneity of color & machine temperature should reach at
-                    93°c to start the production (checked with digital
-                    thermometer) → Detergent tank is cleaned in every shift.
-                  </p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <h4>Lens Preparation</h4>
-                  <p>
-                    Cosmetic Check of all incoming lens is done in Tint before
-                    production starts → Color wise segregation of material →
-                    Color wise batch preparation as per basket size/catcher →
-                    all lenses are cleaned in detergent bath for 10 Seconds
-                    (Commercial detergent- Fena Brand) → all lenses are cleaned
-                    in DI water for around 5 Sec→ processed for doing tinting
-                  </p>
-                </li>
-              </ul>
-
-              <ul>
-                <li>
-                  <h4>Solid color For Coated Orders</h4>
-                  <p>
-                    Lens are dipped for 15-20 mins in the hot bath for the
-                    respective color (Temp- 93 °c & above) → they are checked
-                    for shade %, if within tolerance then that go for pair
-                    matching of individual order in BPI machine manually. Coated
-                    orders should have additional tinting around 4%-5%, as
-                    leaching of tint color take place in hard coat
-                  </p>
-                  <h5>If shade is not achieved</h5>
-                  <p>
-                    Lenses dipped again in hot bath till it achieves the nearest
-                    possible shade.
-                  </p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <h4>Solid color for un-coated Progressive Orders</h4>
-                  <p>
-                    Lens are dipped for 15-20 mins in the hot bath for the
-                    respective color (Temp- 93 °c & above)
-                  </p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <h4>Gradient color for Coated Lenses (H&K Machine)</h4>
-                  <p>
-                    Chosen the appropriate software controlled movement of lens
-                    in the H & K machine → Lenses are dipped in hot bath by the
-                    mechanical arm of the machine in controlled way so that lens
-                    is dipped in the bath as per the desired gradient shade
-                    (gradient %) for 25-30 mins → all lenses will go for shade
-                    matching at manual BPI machine.
-                  </p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <h4>
-                    Gradient color for Un-Coated Progressive Lenses (H&K
-                    Machine)
-                  </h4>
-                  <p>
-                    Chosen the appropriate software controlled movement of lens
-                    in the H & K machine → Lenses are dipped in hot bath by the
-                    mechanical arm of the machine in controlled way so that lens
-                    is dipped in the bath as per the desired gradient shade
-                    (gradient %) for 25-30 mins → all lenses will go for shade
-                    matching at manual BPI machine → Send lenses for QC check
-                    for shade matching → After tint QC, Lenses will come back to
-                    tint production & clean all lenses with IPA → Put all
-                    uncoated progressive lenses in thermal oven for curing at
-                    100°c for 1 hour → Pull out the lenses from oven & keep them
-                    at room temperature for 1 hour for ambient cooling of lenses
-                    → All lenses are sent for uncoated packing.
-                  </p>
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-          </article>
-          <!--//docs-article-->
-
-          <article class="docs-article" id="section-9">
-            <header class="docs-header">
-              <h1 class="docs-heading">Coating</h1>
-              <section class="docs-intro">
+              <li>
                 <p>
-                  In the lens manufacturing process, coating refers to the
-                  application of thin, transparent layers of material onto the
-                  surface of the lens. Coatings are used in lens manufacturing
-                  for a variety of reasons, including to enhance the performance
-                  and durability of the lens.
+                  Now after selecting the Lab option, we will enter the OCI
+                  number of a particular order.
                 </p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/oci_input.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/oci_input.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
+
+              <li>
                 <p>
-                  Some common types of lens coatings include Hard
-                  (scratch-resistant) coatings, which make the lens more durable
-                  and resistant to damage, and anti-reflective coatings, which
-                  reduce glare and improve visual clarity.
+                  In this screen, There is a Dropdown menu to select the Lab,
+                  click on this dropdown menu button.
                 </p>
-              </section>
-              <!--//docs-intro-->
-            </header>
-            <section class="docs-section" id="item-9-1">
-              <h2 class="section-heading">Hard (Scratch-resistant) Coating</h2>
-              <p>
-                Scratch resistant coating or hard coating provide lenses with
-                durability and increased longevity. A high quality thermally
-                cured hardcoat provides the best scratch resistance and provides
-                for the most durable ingredient for an AR coating application.
-                Plastic lens materials scratch easily than glass materials, and
-                therefore benefit greatly with application of a durable
-                hardcoat.
-              </p>
-              <h2 class="section-heading">Procedure</h2>
-              <ul>
-                <li>
-                  <h4>Lens received from Surface QC/Tint/Finish Store</h4>
-                  <p>
-                    As per the requirement lenses comes from different
-                    departments for hard coating process.
-                  </p>
-                  <p>
-                    Some stocks lenses comes directly from Finish store, some
-                    lenses comes from Surface QC or from Tint department
-                  </p>
-                </li>
-                <li><h4>Index/Coating wise segregation</h4></li>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/dropdown.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/dropdown.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
+
+              <li>
                 <p>
-                  Lenses are segregated according to the index of the lens or
-                  the type of coating to be done on them. Lens index is a number
-                  that describes how thick or thin your lenses are. The higher a
-                  lens' index is, the thinner it becomes. Higher prescriptions
-                  require higher index lenses, while lower prescriptions require
-                  lower index lenses.
+                  After entering the OCI Number, click on the Update Status
+                  button, by clicking this button status of particular order
+                  will be updated.
                 </p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/update_button.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/update_button.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
 
-                <li>
-                  <h4>Lens cleaning and Lens loading in lensholder</h4>
-                  <p>
-                    The surface of the lens is cleaned and prepared to remove
-                    any dirt, oil, or other contaminants that may interfere with
-                    the hard coating process. This step is important to ensure
-                    that the coating adheres properly to the lens surface. then
-                    the lens is loaded into lensholader
-                  </p>
-                </li>
+              <li>
+                <p>
+                  After clicking the Update Status button, If the OCI number and
+                  the selected lab from dropdown menu are valid, the status of
+                  the order will be updated successfully. (Order Status:
+                  Success)
+                </p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/status_pass.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/status_pass.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
 
-                <li>
-                  <h4>Lens loading in machine</h4>
-                  <p>
-                    The lens is then loaded into a specialized vacuum chamber
-                    that is designed for hard coating. The chamber is sealed and
-                    the air is evacuated to create a vacuum.
-                  </p>
-                </li>
-                <li>
-                  <h4>Deposition</h4>
-                  <p>
-                    The hard coating material is then vaporized inside the
-                    vacuum chamber using an electric charge or a heat source.
-                    The vaporized material condenses onto the surface of the
-                    lens to form a thin, uniform layer.
-                  </p>
-                </li>
-                <li>
-                  <h4>Lens unloading</h4>
-                  <p>
-                    Lens unloading typically involves removing the coated lens
-                    from the vacuum chamber after the coating has been applied.
-                  </p>
-                </li>
+              <li>
+                <p>
+                  If the OCI number is not valid, then this screen will appear,
+                  and the status of the order will be this: Failure - OCI Number
+                  is not valid.
+                </p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/status_fail.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/status_fail.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
 
-                <li>
-                  <h4>Lens curing in oven</h4>
-                  <p>
-                    The coated lens is then heated to a specific temperature for
-                    a specific time period to allow the coating to settle and
-                    cure properly. Lens curing process helps to ensure that the
-                    hard coating adheres properly to the surface of the lens and
-                    achieves the desired level of hardness.
-                  </p>
-                </li>
+              <li>
+                <p>
+                  If we select the wrong Lab option from the dropdown menu for
+                  any OCI Number then the status of the order will be not
+                  updated.
+                </p>
+                For Example: If the lens is currently in the invenotry and we
+                want to update the status of this order to Issue to surfacing QC
+                without sending it to surfacing lab, then this will throw error
+                Failure: At inventory status is not valid state for Lab.
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/status_fail2.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/status_fail2.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
 
-                <li>
-                  <h4>Inspection</h4>
-                  <p>
-                    Once the hard coating process is complete, the coated lens
-                    is inspected for any defects, such as bubbles or unevenness
-                    in the coating. The coating thickness is also checked to
-                    ensure that it meets the desired specifications.
-                  </p>
-                </li>
+              <li>
+                <p>
+                  If the order is in the Surfacing QC and we will directly
+                  update its status to - Dispatch to Branch for Fitting, this
+                  will throw this error: Coating/Tinting/Fitting Status Log
+                  Validation Error.
+                </p>
+                <div
+                  class="simplelightbox-gallery row col-12 col-md-12 row mt-2 mb-3"
+                >
+                  <a href="assets/images/status_fail3.png" target="_blank"
+                    ><img
+                      class="figure-img img-fluid shadow rounded"
+                      src="assets/images/status_fail3.png"
+                      alt=""
+                  /></a>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <!--//section-->
+        </article>
+        <!--//docs-article-->
 
-                <li>
-                  <h4>Transfer as per coating</h4>
-                  <p>
-                    If Hard Multi-Coating is required, the lens is sent to a
-                    multi coating lab.
-                  </p>
-                  <p>
-                    If Hard Multi-Coating is not required, the lens is sent
-                    directly to the final QC.
-                  </p>
-                </li>
-              </ul>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-9-2">
-              <h2 class="section-heading">Hard Multi Coating</h2>
-              <p>
-                In lens production, HMC (Hard Multi-Coat) is a type of coating
-                that is commonly applied to the surface of lenses. HMC coatings
-                can improve the visual performance of eyeglasses by reducing
-                unwanted reflections, and improving contrast.
-              </p>
-              <h3>Anti- Reflection Coating</h3>
-              <ul>
-                <li>
-                  <p>
-                    An Anti-reflection coating is a type of optical coating
-                    applied to the surface of lenses to reduce reflection. The
-                    primary benefit is the elimination of the reflection itself
-                    which makes the eyes of the wearer more visible to others.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Another benefit of AR coating is to reduce glare of light,
-                    which is particularly noticeable when driving at night or
-                    working in front of a computer monitor. The decreased glare
-                    means that wearers often find their eyes are less tired,
-                    particularly at the end of the day.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Allowing more light to pass through the lens also increases
-                    contrast and therefore increases visual clarity.
-                  </p>
-                </li>
-              </ul>
-              <h4 class="pt-3">Additional Benefits</h4>
-              <ul>
-                <li>
-                  <p>
-                    Anti-reflection lenses include an additional coating that
-                    repels water and oil, making them easier to keep clean.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Present Anti Reflection coatings are also having an
-                    Anti-Static property which repels dusts and in turn
-                    generates less scratch while cleaning.
-                  </p>
-                </li>
-              </ul>
-
-              <h3 class="pt-3">Procedure</h3>
-              <ul>
-                <li>
-                  <p>
-                    To apply the AR Coating, lenses must be with Hard Coating
-                    (Anti Scratch coating) which acts as a buffer cushioning
-                    layer.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    This coating is getting applied on lenses inside a high
-                    vacuum chamber. An Ion Gun is used to make the lenses
-                    surface rough. This roughening is needed for good adhesion
-                    of AR coating.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Then some coating materials (Silicon Oxide, Zirconium Oxide,
-                    Indium Tin Oxide etc.) gets deposited in alternate layers to
-                    achieve the required properties. At last the hydrophobic
-                    material gets deposited.
-                  </p>
-                </li>
-              </ul>
-
-              <h4>Step by Step Procedure</h4>
-              <ol>
-                <li>Recieve Lenses from Hard Coating Lab</li>
-                <li>Keep in Thermal Oven at 40 Degree Celsius temperature</li>
-                <li>
-                  <p>
-                    Lenses loaded (convex side down) in different sectors with
-                    rings
-                  </p>
-                  <div class="simplelightbox-gallery row mb-3">
-                    <div class="col-4 col-md-4 row mb-3">
-                      <a href="assets/images/ring.png" target="_blank"
-                        ><img
-                          class="figure-img img-fluid shadow rounded"
-                          src="assets/images/ring1.png"
-                          alt=""
-                      /></a>
-                    </div>
-
-                    <div class="col-8 col-md-8 row mb-3">
-                      <a href="assets/images/ring2.png" target="_blank"
-                        ><img
-                          class="figure-img img-fluid shadow rounded"
-                          src="assets/images/ring2.png"
-                          alt=""
-                      /></a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>Putting these sectors inside the AR machine</li>
-                <li>
-                  Filling of required materials as per type of AR process (
-                  Convex side )
-                </li>
-                <li>Start the coating process</li>
-                <li>
-                  After completion of CX side take out sectors from AR Machine
-                </li>
-                <li>
-                  Flipping: The lens is typically held in a specialized fixture
-                  or tool that allows it to be flipped over without touching the
-                  surface of the lens. The coating is then applied to the other
-                  side of the lens.
-                </li>
-                <li>Putting sectors inside machine</li>
-                <li>
-                  Filling consumable and start respective concave coating
-                  process
-                </li>
-                <li>
-                  After completion of concave coating take out lenses from
-                  machine chamber
-                </li>
-                <li>Unloading as per standard practice</li>
-                <li>Pass lenses to Coating QC</li>
-              </ol>
-            </section>
-            <!--//section-->
-          </article>
-          <!--//docs-article-->
-
-          <footer class="footer">
-            <div class="container text-center py-3">
-              <small class="copyright">© Vision Rx Lab</small>
-            </div>
-          </footer>
-        </div>
+        <footer class="footer">
+          <div class="container text-center py-3">
+            <small class="copyright">© Vision Rx Lab</small>
+          </div>
+        </footer>
       </div>
     </div>
+
     <!--//docs-wrapper-->
 
     <!-- Javascript -->

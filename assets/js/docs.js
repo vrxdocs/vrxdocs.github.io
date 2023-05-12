@@ -73,7 +73,7 @@ sidebarLinks.forEach((sidebarLink) => {
 			
 			sidebar.classList.remove('sidebar-visible');
 		    sidebar.classList.add('sidebar-hidden');
-		} 
+		}
 		
     });
 	

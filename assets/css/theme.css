@@ -13187,7 +13187,7 @@ a.text-link:hover {
 }
 
 .docs-sidebar-toggler span {
-    display: block;
+    display: none;
     background-color: #252930;
     height: 3px;
     width: 24px;
@@ -13337,7 +13337,7 @@ a.text-link:hover {
 }
 
 .docs-content {
-    margin-left: 300px;
+
     padding-bottom: 500px
 }
 
