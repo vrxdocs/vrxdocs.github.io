@@ -68,8 +68,8 @@
     --bs-border-radius-2xl: 2rem;
     --bs-border-radius-pill: 50rem;
     --bs-heading-color: ;
-    --bs-link-color: #28b76b;
-    --bs-link-hover-color: #209256;
+    --bs-link-color: #5e9ff5;
+    --bs-link-hover-color: #5b99ea;
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd
 }
@@ -13148,7 +13148,7 @@ a.text-link:hover {
 }
 
 .docs-branding .top-search-box {
-    width: 300px
+    
 }
 
 .docs-logo-wrapper {
